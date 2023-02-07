@@ -1,0 +1,234 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.title-headline {
+    font-weight: bold;
+    font-size: xx-large;
+    padding: 5px 10px;
+    color: green;
+}
+.main-nav {
+    padding: 5px 10px;
+    background-color: black;
+    
+}
+.main-nav li a {
+    text-decoration: none;
+    color: white;
+    border: 2px solid blue;
+    padding: 3px 4px;
+    border-radius: 6px;
+}
+.main-nav li {
+    display: inline-block;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+.main-nav li a:hover {
+color: red;
+background-color: white;
+}
+.main-header {
+    height: 50vh;
+    background-image: url("/images/jonyo6.JPG");
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.title-2 {
+    font-size: xx-large;
+    font-weight: bold;
+    color: blue;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.title-3 {
+    font-size: x-large;
+    font-weight: bold;
+    color: blue;
+    margin: 10px 0px;
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.intro-para{
+    font-size: x-large;
+    font-weight: bold;
+    color: blue;
+    margin: 10px 0px;
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.title-4 {
+    font-size: larger;
+    font-weight: bold;
+    color: darkred;
+    border: 2px solid blue;
+    width: 9%;
+    padding: 5px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    background-color: greenyellow;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.title-4:hover {
+    background-color: violet;
+    color: red;
+}
+.under-title {
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 10px 0px; 
+    padding: 5px 10px;
+    color: blue;
+}
+.header-container{
+    background-color: beige;
+    height: 60%;
+    width: 40%;
+    box-shadow : 5px 5px 20px rgba(119, 18, 18, 0.985);
+    border-radius: 14px;
+}
+
+.main-projects {
+    min-height: 100vh;
+    border: 2px solid red;
+}
+.project-container {
+    border: 2px solid red;
+    min-height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card-wrapper {
+    border: 2px solid green;
+    width: 250px;
+    height: 500px;
+    margin: 10px;
+}
+.card-top1,
+.card-top2,
+.card-top3,
+.card-top4,
+.card-top5, 
+.card-bottom {
+    border: 2px solid red;
+    max-width: 250px;
+    height: 247px;
+    background-size: cover;
+    background-position: center;
+}
+.card-top1 {
+    background-image: url("/images/jonyo6.JPG");
+}
+.card-top2 {
+    background-image: url("/images/jonyo1.JPG"); 
+}
+.card-top3 {
+    background-image: url("/images/jonyo2.JPG");
+}
+.card-top4 {
+    background-image: url("/images/jonyo3.JPG");
+}
+.card-top5 {
+    background-image: url("/images/jonyo4.JPG");
+}
+.card-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aquamarine; 
+}
+.card-bottom h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 5px 5px;
+    color: darkblue; 
+}
+.card-bottom p {
+    margin: 5px 0 10px 5px;
+    font-weight: bold;
+}
+.card-bottom a {
+    margin: 0 0 10px 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.card-bottom a:hover {
+    color: red;
+}
+/* ABOUT */
+.main-about {
+    border: 2px solid red;
+    height: 100vh;
+    padding: 50px;
+    overflow: scroll;
+}
+.main-about h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: darkblue;
+}
+.about-container {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+.about-paragraph {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: blueviolet;
+    text-align: justify;
+} 
+.title-2, .title-3, .title-4, .intro-para{
+    transform: translateX(-200%);
+    opacity: 0;
+    transition: all 1s;
+}
+header:hover p{
+    transform: translate(0);
+    opacity: 1;
+}
+header:hover h1{
+    transform: translate(0);
+    opacity: 1;
+}
+header:hover h2{
+    transform: translate(0);
+    opacity: 1;
+}
+header:hover a{
+    transform: translate(0);
+    opacity: 1;
+}
+.title-2{
+    transition-delay: 0.4s;
+}
+.title-3{
+    transition-delay: 0.8s;
+}
+.title-4{
+    transition-delay: 1.2s;
+}
+.intro-para{
+    transition-delay: 1.6s;
+}
+/* TABLET */
+@media screen and (max-width:768px) {
+    .header-container{
+        width: 90vw;
+        height: 55vh; 
+        margin-left: 1vw;
+    }
+}
+/* DESKTOP */
+@media screen and (min-width:769px) {
+    .header-container{
+        width: 90vw;
+        height: 60vh; 
+    }
+}

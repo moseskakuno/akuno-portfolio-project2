@@ -216,7 +216,7 @@ header:hover a{
     transition-delay: 1.6s;
 }
 footer{
-    background-color: azure;
+    background-color: lightgrey;
     width: 100vw;
     height: 120px;
 }

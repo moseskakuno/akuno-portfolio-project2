@@ -215,6 +215,25 @@ header:hover a{
 .intro-para{
     transition-delay: 1.6s;
 }
+footer{
+    background-color: azure;
+    width: 100vw;
+    height: 120px;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: inherit;
+    height: inherit;
+}
+ .icons{
+    padding: 5px 20px 5px 20px;
+    font-size: 48px;
+} 
+.copyright, p{
+    font-weight: bolder;
+} 
 /* TABLET */
 @media screen and (max-width:768px) {
     .header-container{

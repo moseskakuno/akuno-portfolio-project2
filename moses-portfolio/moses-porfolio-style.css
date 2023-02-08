@@ -241,6 +241,20 @@ footer{
 .project-para{
     margin-left: 5px;
 }
+.video-container{
+    width: fit-content;
+    height: fit-content;
+    border: 8px solid blue;
+    border-radius: 14px;
+    box-shadow : 15px 15px 20px rgba(119, 18, 18, 0.985);
+}
+.map-container{
+    width: fit-content;
+    height: fit-content;
+    border: 8px solid blue;
+    border-radius: 14px;
+    box-shadow : 15px 15px 20px rgba(119, 18, 18, 0.985);
+}
 /* TABLET */
 @media screen and (max-width:768px) {
     .header-container{

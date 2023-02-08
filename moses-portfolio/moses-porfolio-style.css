@@ -9,12 +9,15 @@ body {
 }
 .main-nav {
     padding: 5px 10px;
-    background-color: black;
-    
+    background-color: black ;
+    z-index: 1;
+    position: fixed;
+    width: 100vw;
+    margin-top: 0px;
 }
 .main-nav li a {
     text-decoration: none;
-    color: white;
+    color:white;
     border: 2px solid blue;
     padding: 3px 4px;
     border-radius: 6px;
@@ -75,7 +78,7 @@ background-color: white;
 }
 .title-4:hover {
     background-color: violet;
-    color: red;
+    color: white;
 }
 .under-title {
     font-size: xx-large;
@@ -209,11 +212,11 @@ header:hover a{
 .title-3{
     transition-delay: 0.8s;
 }
-.title-4{
+.intro-para{
     transition-delay: 1.2s;
 }
-.intro-para{
-    transition-delay: 1.6s;
+.title-4{
+    transition-delay: 2.4s;
 }
 footer{
     background-color: lightgrey;

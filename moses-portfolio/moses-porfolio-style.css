@@ -272,6 +272,19 @@ footer{
         justify-content: center;
     }
 }
+.ic-1:hover{
+transform: translateY(-10px);
+box-shadow : 15px 15px 20px rgba(119, 18, 18, 0.985);
+}
+.ic-2:hover{
+    transform: translateY(-10px);
+    box-shadow : 15px 15px 20px rgba(119, 18, 18, 0.985);
+    }
+.ic-3:hover{
+        transform: translateY(-10px);
+        box-shadow : 15px 15px 20px rgba(119, 18, 18, 0.985);
+        }
+    
 /* TABLET */
 @media screen and (max-width:768px) {
     .header-container{

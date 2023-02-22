@@ -1,137 +1,44 @@
-# DCI Boilerplate sass + parcel
+# Introduction:
 
-An HTML CSS boilerplate with built-in sass support:
+Let's create a program that will return a sum of numbers that you can provide through your terminal!
 
-- Development server powered by [parcel](https://parceljs.org/) with sass compilation and auto-reload.
-- Deployments to github pages with [gh-pages](https://www.npmjs.com/package/gh-pages)
+- By typing arguments `1`, `2`, `3` and `4`, you should receive `10`
 
-## Get Started
+### Important!
 
-- [Setup](#setup)
-- [Useful Commands](#useful-commands)
-- [Project Structure](#project-structure)
-- [Credits](#credits)
+- You should provide only 4 arguments through the console!
+- Every argument should be a number!
 
-## Setup
+# Steps:
 
-1. Clone this repository into a new project folder
+## Task 1:
 
-2. Delete the boilerplate's git history to ensure that the project history only includes your commits
+- Create a new file "script.js"
 
-   ```
-   cd <project folder>
-   rm -rf .git
-   ```
+## Task 2:
 
-3. Edit `package.json` to add you project's name
+- Inside the `script.js` file create a variable `arguments`, that will contain `process.argv` as an initial value.
 
-   `package.json`
+## Task 3:
 
-   ```json
-   {
-     "name": "[project name]",
-     ...
-     "author": "[your name]"
-   }
-   ```
+- Log the `arguments` value in the console.
+- Check the data type of the `arguments` variable and log it the console.
+- Check if the `arguments` is an array. If yes, print this information in the console: `"It is an array."`, if not, print `"It is not an array."` instead.
 
-4. Edit `src/index.html` to add your projects name
+## Task 4:
 
-   ```html
-   ...
-   <head>
-     ...
-     <title>[project name]</title>
-   </head>
-   ...
-   ```
+- Create a variable called `sum` that will contain the sum of all the arguments passed through the console.
+- Log the `sum` variable in the console.
 
-5. Start a new git repository and make an initial commit. This will make sure that you can work on your project with git.
+#
 
-   ```
-   git init
-   git add . && git commit -m "Initial commit"
-   ```
+### Tips:
 
-6. Install the dependencies
+### Tips:
 
-   ```
-   npm install
-   ```
+- ["How to change a string into a number"](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt).
+- ["process.argv Docs"](https://nodejs.org/docs/latest/api/process.html#processargv).
 
-7. Happy Coding!
+#
 
-## Useful Commands
-
-### Development
-
-Run **parcel-live-server** and start coding!
-
-```
-npm start
-```
-
-### Production
-
-Compile source code from **src** and create an optimized production bundle in **dist** folder ready for **deployment**.
-
-```
-npm run build
-```
-
-### Deploy to Github Pages
-
-Deploy your code to **Github Pages**: this script creates a 'gh-pages' branch and publishes the **dist** folder. For this to work, make sure you already have a remote repository on github.
-
-```
-npm run publish
-```
-
-## Project Structure
-
-Any project created with this boilerplate will follow the structure below:
-
-```
-Project
-│   README.md
-│   package.json
-|   package-lock.json
-└───src
-│   │   index.html
-│   |   sassy-css.scss
-|   └───images
-└───dist
-```
-
-### `README.md`
-
-The README should contain a brief description of your project, feel free to delete this guide or rename it to add your own description.
-
-### `package.json` & `package-lock.json`
-
-These files contain various information about you, your project and the project dependencies, as well as useful scripts to help you with the development process.
-
-### `src` & `index.html`
-
-The `src` folder contains any file you would want to add to your website. **This is the main folder you will be working in**.
-
-`index.html` is the main page for your website which you will be working on. Feel free to add any new `html` pages you create directly in the `src` folder.
-
-### `main.scss`
-
-The `main.scss` file will contain any `scss` code you will be writing.
-
-### `images`
-
-Contains all images of your project
-
-### `dist`
-
-The `dist` folder will be automatically generated whenever your run the start or build script:
-
-```bash
-npm start
-npm run build
-```
-
-`npm start` will create a non optimized bundle and `npm run build` will create an optimized production bundle, ready to be deployed. It is excluded from `git` tracking since it is not customary to include compiled code in a development project.
+# Good luck!
